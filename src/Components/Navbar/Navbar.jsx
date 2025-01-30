@@ -1,0 +1,34 @@
+import React, { useContext } from "react";
+import "./Navbar.css";
+import logo from "../Assets/logo.png";
+import cart_icon from "../Assets/cart_icon.png";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ShopContext } from "../../Context/ShopContextProvider";
+
+const Navbar = () => {
+
+  const [menu,setMenu] = useState("shop");
+  const {getTotalItems} = useContext(ShopContext);
+    return (
+       <div className="navbar">
+            <div className="nav-logo">
+              <img src={logo} alt="H&K"></img>
+              <p>H&K</p>
+            </div>
+            <ul className="nav-logo-menu"> 
+               <li onClick={()=> {setMenu("shop")}}><Link to={"/"} style={{textDecoration : 'none'}}>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
+               <li onClick={()=> {setMenu("Men")}}><Link to={"/mens"}  style={{textDecoration : 'none'}}>Men</Link> {menu==="Men"?<hr/>:<></>}</li>
+               <li onClick={()=> {setMenu("Women")}}><Link to={"/Womens"}  style={{textDecoration : 'none'}}>Women</Link> {menu==="Women"?<hr/>:<></>}</li>
+               <li onClick={()=> {setMenu("kids")}}><Link to={"/kids"}  style={{textDecoration : 'none'}}> Kids</Link> {menu==="kids"?<hr/>:<></>}</li>
+            </ul>
+            <div className="nav-login-cart">
+                <Link to={"/login"}  style={{textDecoration : 'none'}}><button>login</button></Link>
+                <Link to={"/Cart"}  style={{textDecoration : 'none'}}><img src={cart_icon} alt="cart"></img></Link>
+                <div className="nav-cart-count">{getTotalItems()}</div>
+            </div>
+       </div>
+    )
+}
+
+export default Navbar;
