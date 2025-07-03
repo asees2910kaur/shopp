@@ -6,7 +6,7 @@
     padding:0 140px;
     margin-bottom:150px;
     margin-top: 120px;
-    background:linear-gradient(180deg,#fde1ff,#e1ffea22);
+    background:linear-gradient(grey, #191535);
 }
 .Offers_left {
     flex: 1;
@@ -22,7 +22,7 @@
 .Offers_left p {
     font-size:22px;
     font-weight: 600;
-    color: #171711;;
+    color:white;
 }
 .Offers_left button {
     width: 250px;

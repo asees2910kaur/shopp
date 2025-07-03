@@ -7,7 +7,7 @@
     align-items: center;
     padding: 0px 140px;
     margin: auto;
-    background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+    background:linear-gradient(grey, #191535);
     gap:30px;
     margin-bottom: 150px;
 }
@@ -18,7 +18,7 @@
 }
 .newsLetter p {
     font-size: 15px;
-    color:#454545;
+    color:White;
 }
 .EmailId {
     display: flex;
