@@ -1,40 +1,48 @@
 import React from 'react';
-import "./Footer.css";
-import footer_logo from "../Assets/logo_big.png";
-import instagram_logo from "../Assets/instagram_icon.png";
-import pinterest_logo from "../Assets/pintester_icon.png";
-import whatsapp_logo from "../Assets/whatsapp_icon.png";
-
+import '../Footer/Footer.css'; // Import the CSS file
+import logo from "../Assets/logo.png";
+import twitter from "../Assets/twitter.png";
+import instagram from "../Assets/instagram.png";
+import youtube from "../Assets/youtube.png";
+import linkedin from "../Assets/linkedin.png";
 const Footer = () => {
-  return (
-    <div className='footer'>
-        <div className="footer-logo">
-            <img src={footer_logo}/>
-            <p>H & K</p>
-        </div>
-        <ul className='footer-list'>
-           <li>Home</li>
-           <li>offices</li>
-           <li>products</li>
-           <li>About</li>
-           <li>Contact</li>
-        </ul>
-        <div className="social-icons">
-            <div className='social'>
-                  <img src={instagram_logo}/>
+    return (
+        <footer className="footer-container">
+            <div className="footer-content">
+                <div className='footer-logo'>
+                <img src={logo} alt ="logo"/>
+                <h1>Fitstructor</h1>
+                <p>
+                At Fitstructor, we bring excitement to group workouts, ensure 
+                your daily meals are both nutritious and delicious, make 
+                mental wellness simple with yoga and meditation, and 
+                provide seamless medical and lifestyle care. #BeBetterEveryDay
+                </p>
+                </div>
+                <div className="footer-links">
+                    <ul>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">blogs</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">security</a></li>
+                        <li><a href="#">Fit+ bmi calculator</a></li>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">terms & conditions</a></li>
+                    </ul>
+                </div>
+                <div className='footer-feedback'>
+                    <h2>Feedbacks appriciated</h2>
+                    <textarea rows="8" cols="60" placeholder='your feedback '/>
+                <div className="footer-socials">
+                    <a href="#"><img src={youtube} alt="YouTube" /></a>
+                    <a href="#"><img src={twitter} alt="X" /></a>
+                    <a href="#"><img src={instagram} alt="Instagram" /></a>
+                    <a href="#"><img src={linkedin} alt="LinkedIn" /></a>
+                </div>
+                </div>
             </div>
-            <div className='social'>
-                  <img src={pinterest_logo}/>
-            </div>
-            <div className='social'>
-                  <img src={whatsapp_logo}/>
-            </div>
-        </div>
-        <div className="copyright">
-            <hr />
-            <p>copyright &copy; 2024 - All rights reserved</p>
-        </div>
-    </div>
-  )
-}
+        </footer>
+    );
+};
+
 export default Footer;
