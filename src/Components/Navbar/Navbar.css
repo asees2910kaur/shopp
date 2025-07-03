@@ -2,12 +2,13 @@
 .navbar {
     display: flex;
     justify-content: space-around;
+    background: linear-gradient(45deg, #0F0D1F, #2A1B5C);
 }
 
 .nav-logo {
     display:flex;
     align-items: center;
-    gap:5px;
+    gap:20px;
 }
 .nav-logo img{
     height: 90px;
@@ -17,13 +18,13 @@
     font-size:30px;
     font-weight:500;
     font-family: "Lilita One", sans-serif;
-    color: #171717;
+    color: #c2bfbf;
     cursor: pointer;
 }
 .nav-logo-menu {
     display: flex;
     align-items: center;
-    color: #626262;
+    color: #c2bfbf;
     gap:50px;
     list-style: none;
 }
@@ -35,12 +36,15 @@
     gap:3px;
     cursor: pointer;
 }
+.nav-logo-menu li a{
+    color: #c2bfbf;
+}
 .nav-logo-menu hr {
     border: none;
     width: 80%;
     height: 3px;
     border-radius: 10px;
-    background-color: red;
+    background-color: #7D7777;
 }
 .nav-login-cart {
     display: flex;
@@ -69,7 +73,7 @@
     height: 22px;
     margin:-35px 0 0 -55px;
     text-align: center;
-    background-color: RED;
+    background-color: #ff5a5a;
     color: white;
     border-radius: 11px;
     font-size:15px ;
