@@ -6,13 +6,13 @@
     justify-content: center;
     align-items: center;
     padding: 0px 140px;
-    margin: auto;
-    background:linear-gradient(grey, #191535);
+    margin:auto;
+    background: #191535;
     gap:30px;
     margin-bottom: 150px;
 }
 .newsLetter h1 {
-    color:#454545;
+    color:White;
     font-weight: 500;
     font-size:55px ;
 }
@@ -41,7 +41,7 @@
 .EmailId button {
     width:210px;
     height: 70px;
-    background-color: black;
+    background-color:#ff4141;
     border-radius: 80px;
     color: white;
     font-size: 16px;
