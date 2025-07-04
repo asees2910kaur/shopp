@@ -3,10 +3,11 @@
 }
 .ShopCategory-banner {
     display:block;
-    width: 95%;
-    margin:0px 30px;
     cursor: pointer;
     height: 70%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .shopCategory-indexSort {
     display: flex;
