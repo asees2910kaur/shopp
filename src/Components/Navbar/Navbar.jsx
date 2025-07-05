@@ -23,7 +23,6 @@ const Navbar = () => {
                <li onClick={()=> {setMenu("kids")}}><Link to={"/kids"}  style={{textDecoration : 'none'}}>Accessories</Link> {menu==="kids"?<hr/>:<></>}</li>
             </ul>
             <div className="nav-login-cart">
-                <Link to={"/login"}  style={{textDecoration : 'none'}}><button>Login</button></Link>
                 <Link to={"/Cart"}  style={{textDecoration : 'none'}}><img src={cart_icon} alt="cart"></img></Link>
                 <div className="nav-cart-count">{getTotalItems()}</div>
             </div>
